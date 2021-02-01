@@ -1,0 +1,25 @@
+﻿<Window x:Class="ClientServer.TableClientsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientServer"
+        mc:Ignorable="d"
+        Title="TableClientsWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="TableClientsGrid" HorizontalAlignment="Center" Height="343" Margin="0,10,0,0" VerticalAlignment="Top" Width="779" FontSize="22" AutoGenerateColumns="False" SelectionChanged="TableClientsGrid_SelectionChanged" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="id" FontSize="14" Header="ID" Binding="{Binding c_id}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="index" FontSize="14" Header="Индекс" Binding="{Binding c_index}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="fullname" FontSize="14" Header="ФИО" Binding="{Binding c_FN}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="pseries" FontSize="14" Header="Серия паспорта" Binding="{Binding c_passport_series}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="pnumber" FontSize="14" Header="Номер паспорта" Binding="{Binding c_passport_number}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="AddClient" Content="Добавить" HorizontalAlignment="Left" Margin="10,368,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="AddClient_Click" />
+        <Button x:Name="EditClient" Content="Изменить" HorizontalAlignment="Left" Margin="220,368,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="EditClient_Click" />
+        <Button x:Name="DeleteClient" Content="Удалить" HorizontalAlignment="Left" Margin="430,368,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="DeleteClient_Click" />
+        <Button x:Name="UpdateGrid" Content="Обновить данные" HorizontalAlignment="Left" Margin="640,368,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="UpdateGrid_Click" />
+
+    </Grid>
+</Window>

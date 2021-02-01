@@ -1,0 +1,26 @@
+﻿<Window x:Class="ClientServer.TableMailPostsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientServer"
+        mc:Ignorable="d"
+        Title="TableMailPostsWindow" Height="450" Width="1000">
+    <Grid>
+        <DataGrid x:Name="TableMailPostsGrid" HorizontalAlignment="Center" Height="343" Margin="0,10,0,0" VerticalAlignment="Top" Width="978" FontSize="22" AutoGenerateColumns="False" SelectionChanged="TableMailPostsGrid_SelectionChanged" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="id" FontSize="14" Header="ID" Binding="{Binding m_id}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="index" FontSize="14" Header="Индекс" Binding="{Binding m_index}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="address" FontSize="14" Header="Адрес" Binding="{Binding m_address}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="phone" FontSize="14" Header="Телефон" Binding="{Binding m_phone}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="postamat_count" FontSize="14" Header="Количество постаматов" Binding="{Binding m_postamat_count}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="lastupdate" FontSize="14" Header="Последнее изменение" Binding="{Binding m_last_update_time}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="AddMailPost" Content="Добавить" HorizontalAlignment="Left" Margin="11,368,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="AddMailPost_Click"/>
+        <Button x:Name="EditMailPost" Content="Изменить" HorizontalAlignment="Left" Margin="280,368,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="EditMailPost_Click"/>
+        <Button x:Name="DeleteMailPost" Content="Удалить" HorizontalAlignment="Left" Margin="569,368,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="DeleteMailPost_Click"/>
+        <Button x:Name="UpdateGrid" Content="Обновить данные" HorizontalAlignment="Left" Margin="839,368,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="UpdateGrid_Click"/>
+
+    </Grid>
+</Window>

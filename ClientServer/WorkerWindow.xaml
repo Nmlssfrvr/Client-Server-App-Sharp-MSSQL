@@ -1,0 +1,15 @@
+﻿<Window x:Class="ClientServer.WorkerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientServer"
+        mc:Ignorable="d"
+        Title="WorkerWindow" Height="368" Width="395">
+    <Grid Margin="0,0,0,0">
+        <Label x:Name="WorkerPanelLabel" Content="" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="TParcel" Content="Таблица посылок" HorizontalAlignment="Center" Height="69" Margin="0,70,0,0" VerticalAlignment="Top" Width="154" FontSize="15" Click="TParcel_Click"/>
+        <Button x:Name="TInventory" Content="Таблица описей" HorizontalAlignment="Center" Height="69" VerticalAlignment="Top" Width="154" FontSize="15" Click="TInventory_Click" Margin="0,198,0,0"/>
+
+    </Grid>
+</Window>

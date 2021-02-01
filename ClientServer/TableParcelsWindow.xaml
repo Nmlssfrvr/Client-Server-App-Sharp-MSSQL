@@ -1,0 +1,26 @@
+﻿<Window x:Class="ClientServer.TableParcelsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientServer"
+        mc:Ignorable="d"
+        Title="TableParcelsWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="TableParcelsGrid" HorizontalAlignment="Center" Height="343" Margin="0,10,0,0" VerticalAlignment="Top" Width="780" FontSize="22" AutoGenerateColumns="False" SelectionChanged="TableParcelsGrid_SelectionChanged" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="id" FontSize="14" Header="ID" Binding="{Binding p_id}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="tax" FontSize="14" Header="Налог" Binding="{Binding p_tax}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="reciever" FontSize="14" Header="Получатель" Binding="{Binding p_reciever}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="inventory" FontSize="14" Header="Опись" Binding="{Binding p_inventory}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="index" FontSize="14" Header="Индекс" Binding="{Binding p_office}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="tariff" FontSize="14" Header="Тариф" Binding="{Binding p_tariff}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="AddParcel" Content="Добавить" HorizontalAlignment="Left" Margin="10,368,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="AddParcel_Click"/>
+        <Button x:Name="EditParcel" Content="Изменить" HorizontalAlignment="Left" Margin="220,368,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="EditParcel_Click"/>
+        <Button x:Name="DeleteParcel" Content="Удалить" HorizontalAlignment="Left" Margin="430,368,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="DeleteParcel_Click"/>
+        <Button x:Name="UpdateGrid" Content="Обновить данные" HorizontalAlignment="Left" Margin="640,368,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="UpdateGrid_Click"/>
+
+    </Grid>
+</Window>

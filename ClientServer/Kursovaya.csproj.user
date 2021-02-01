@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddEditClientWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddEditMailPostWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddInventoryWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddParcelWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditInventoryWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditParcelWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ParcelsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TableClientsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TableInventoriesWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TableMailPostsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TableParcelsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WorkerWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddEditClientWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddEditMailPostWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddInventoryWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddParcelWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditInventoryWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditParcelWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ParcelsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TableClientsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TableInventoriesWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TableMailPostsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TableParcelsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WorkerWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

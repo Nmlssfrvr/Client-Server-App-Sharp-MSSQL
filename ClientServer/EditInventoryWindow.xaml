@@ -1,0 +1,22 @@
+﻿<Window x:Class="ClientServer.EditInventoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientServer"
+        mc:Ignorable="d"
+        Title="EditInventoryWindow" Height="363" Width="425">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="12,48,0,0" Text="Имя продукта" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" FontSize="14"/>
+        <TextBox x:Name="NewProductName" HorizontalAlignment="Left" Height="30" Margin="148,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="12,98,0,0" Text="Количество" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="12,0,0,0" Text="Цена" TextWrapping="Wrap" VerticalAlignment="Center" Width="131" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="12,198,0,0" Text="Хрупкий товар" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" FontSize="14"/>
+        <ComboBox x:Name="NewFragile" HorizontalAlignment="Left" Height="30" Margin="148,198,0,0" VerticalAlignment="Top" Width="244" FontSize="14"/>
+        <Button x:Name="Edit" Content="Изменить выбранную опись" HorizontalAlignment="Left" Height="59" Margin="20,249,0,0" VerticalAlignment="Top" Width="380" FontSize="20" Click="Edit_Click"/>
+        <TextBox x:Name="NewAmount" HorizontalAlignment="Left" Height="30" Margin="148,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244" FontSize="14"/>
+        <TextBox x:Name="NewPrice" HorizontalAlignment="Left" Height="30" Margin="148,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="244" FontSize="14"/>
+        <Label x:Name="IdLabel" Content="" HorizontalAlignment="Left" Margin="12,10,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+﻿Kursovaya
+
+
+winexe
+C#
+.cs
+B:\Visual Studio Community 2019\repos\Kursovaya\obj\Debug\netcoreapp3.1\
+Kursovaya
+none
+false
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+B:\Visual Studio Community 2019\repos\Kursovaya\App.xaml
+14309993994
+
+25990821278
+214232010375
+AddEditClientWindow.xaml;AddEditMailPostWindow.xaml;AddInventoryWindow.xaml;AddParcelWindow.xaml;AdminWindow.xaml;EditInventoryWindow.xaml;EditParcelWindow.xaml;MainWindow.xaml;ParcelsWindow.xaml;TableClientsWindow.xaml;TableInventoriesWindow.xaml;TableMailPostsWindow.xaml;TableParcelsWindow.xaml;WorkerWindow.xaml;
+
+False
+

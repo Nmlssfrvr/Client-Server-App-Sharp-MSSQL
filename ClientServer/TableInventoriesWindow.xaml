@@ -1,0 +1,25 @@
+﻿<Window x:Class="ClientServer.TableInventoriesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientServer"
+        mc:Ignorable="d"
+        Title="TableInventoriesWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="TableInventoriesGrid" HorizontalAlignment="Center" Height="343" Margin="0,10,0,0" VerticalAlignment="Top" Width="780" FontSize="22" AutoGenerateColumns="False" SelectionChanged="TableInventoriesGrid_SelectionChanged" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="id" FontSize="14" Header="ID" Binding="{Binding i_id}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="pname" FontSize="14" Header="Имя продукта" Binding="{Binding i_product_name}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="amount" FontSize="14" Header="Количество" Binding="{Binding i_amount}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="price" FontSize="14" Header="Цена" Binding="{Binding i_price}" IsReadOnly="True"/>
+                <DataGridTextColumn x:Name="fragile" FontSize="14" Header="Хрупкий товар" Binding="{Binding i_fragile}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="AddInventory" Content="Добавить" HorizontalAlignment="Left" Margin="10,368,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="AddInventory_Click" />
+        <Button x:Name="EditInventory" Content="Изменить" HorizontalAlignment="Left" Margin="220,368,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="EditInventory_Click" />
+        <Button x:Name="DeleteInventory" Content="Удалить" HorizontalAlignment="Left" Margin="430,368,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="DeleteInventory_Click" />
+        <Button x:Name="UpdateGrid" Content="Обновить данные" HorizontalAlignment="Left" Margin="640,368,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="14" Click="UpdateGrid_Click"/>
+
+    </Grid>
+</Window>
